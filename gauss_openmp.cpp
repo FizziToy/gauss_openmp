@@ -62,7 +62,7 @@ int main()
     double end = omp_get_wtime();
 
     cout << "Matrix size: " << N << endl;
-    cout << "Threads: " << omp_get_max_threads() << endl;
+    cout << "Processes: " << omp_get_max_threads() << endl;
     cout << "Execution time: " << end - start << " sec" << endl;
 
     return 0;
