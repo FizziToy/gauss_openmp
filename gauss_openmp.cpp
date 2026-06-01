@@ -11,7 +11,7 @@ using namespace std;
 
 int main()
 {
-    int N = 1500;
+    int N = 10;
 
     vector<vector<double>> A(N, vector<double>(N));
     vector<double> b(N);
@@ -41,12 +41,12 @@ int main()
 
     double start = omp_get_wtime();
 
-#pragma omp parallel
+    #pragma omp parallel
     {
         int threadId = omp_get_thread_num();
         int threadCount = omp_get_num_threads();
 
-#pragma omp single
+        #pragma omp single
         {
             logFile << "Parallel region started" << endl;
             logFile << "Number of threads: " << threadCount << endl << endl;
@@ -54,7 +54,7 @@ int main()
 
         for (int k = 0; k < N; k++)
         {
-#pragma omp single
+            #pragma omp single
             {
                 if (k < 10)
                 {
@@ -66,7 +66,7 @@ int main()
                 }
             }
 
-#pragma omp for schedule(static)
+            #pragma omp for schedule(static)
             for (int i = k + 1; i < N; i++)
             {
                 double oldAik = A[i][k];
@@ -83,7 +83,7 @@ int main()
 
                 if (k < 10 && i < k + 10)
                 {
-#pragma omp critical
+                    #pragma omp critical
                     {
                         logFile << "Thread " << threadId
                             << " processed row " << i
@@ -97,7 +97,7 @@ int main()
                 }
             }
 
-#pragma omp barrier
+        #pragma omp barrier
         }
     }
 

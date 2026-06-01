@@ -1,5 +1,5 @@
 OpenMP Gauss method log
-Matrix size: 1500
+Matrix size: 10
 Max threads: 8
 
 Parallel region started
@@ -7,131 +7,98 @@ Number of threads: 8
 
 ----------------------------------------
 Step k = 0
-Pivot element A[0][0] = 8136
-Pivot b[0] = 93
-Thread 0 processed row 1: factor = 0.000368732, A[1][0] 3 -> 0, b[1] 40 -> 39.9657
-Thread 0 processed row 2: factor = 0.000983284, A[2][0] 8 -> 0, b[2] 58 -> 57.9086
-Thread 0 processed row 3: factor = 0.000737463, A[3][0] 6 -> 0, b[3] 20 -> 19.9314
-Thread 0 processed row 4: factor = 0.000491642, A[4][0] 4 -> 0, b[4] 75 -> 74.9543
-Thread 0 processed row 5: factor = 0.00110619, A[5][0] 9 -> 0, b[5] 9 -> 8.89712
-Thread 0 processed row 6: factor = 0.000614553, A[6][0] 5 -> 0, b[6] 78 -> 77.9428
-Thread 0 processed row 7: factor = 0.000614553, A[7][0] 5 -> 0, b[7] 73 -> 72.9428
-Thread 0 processed row 8: factor = 0.000368732, A[8][0] 3 -> 0, b[8] 83 -> 82.9657
-Thread 0 processed row 9: factor = 0.000614553, A[9][0] 5 -> 0, b[9] 16 -> 15.9428
+Pivot element A[0][0] = 49
+Pivot b[0] = 73
+Thread 7 processed row 9: factor = 0.122449, A[9][0] 6 -> 0, b[9] 47 -> 38.0612
+Thread 4 processed row 6: factor = 0.163265, A[6][0] 8 -> 8.88178e-16, b[6] 58 -> 46.0816
+Thread 0 processed row 1: factor = 0.0204082, A[1][0] 1 -> 1.11022e-16, b[1] 51 -> 49.5102
+Thread 0 processed row 2: factor = 0.0204082, A[2][0] 1 -> 1.11022e-16, b[2] 43 -> 41.5102
+Thread 1 processed row 3: factor = 0.204082, A[3][0] 10 -> 0, b[3] 98 -> 83.102
+Thread 3 processed row 5: factor = 0.204082, A[5][0] 10 -> 0, b[5] 15 -> 0.102041
+Thread 2 processed row 4: factor = 0.163265, A[4][0] 8 -> 8.88178e-16, b[4] 79 -> 67.0816
+Thread 5 processed row 7: factor = 0.204082, A[7][0] 10 -> 0, b[7] 50 -> 35.102
+Thread 6 processed row 8: factor = 0.204082, A[8][0] 10 -> 0, b[8] 66 -> 51.102
 ----------------------------------------
 Step k = 1
-Pivot element A[1][1] = 8173
-Pivot b[1] = 39.9657
-Thread 0 processed row 2: factor = 0.000733643, A[2][1] 5.99607 -> 0, b[2] 57.9086 -> 57.8792
-Thread 0 processed row 3: factor = 0.000489056, A[3][1] 3.99705 -> 0, b[3] 19.9314 -> 19.9119
-Thread 0 processed row 4: factor = 0.0012233, A[4][1] 9.99803 -> 0, b[4] 74.9543 -> 74.9054
-Thread 0 processed row 5: factor = 0.000366521, A[5][1] 2.99558 -> 0, b[5] 8.89712 -> 8.88248
-Thread 0 processed row 6: factor = 0.000978532, A[6][1] 7.99754 -> 8.88178e-16, b[6] 77.9428 -> 77.9037
-Thread 0 processed row 7: factor = 0.00061147, A[7][1] 4.99754 -> 0, b[7] 72.9428 -> 72.9184
-Thread 0 processed row 8: factor = 0.000366882, A[8][1] 2.99853 -> 0, b[8] 82.9657 -> 82.951
-Thread 0 processed row 9: factor = 0.000856178, A[9][1] 6.99754 -> 0, b[9] 15.9428 -> 15.9086
-Thread 0 processed row 10: factor = 0.000244227, A[10][1] 1.99607 -> 0, b[10] 70.9086 -> 70.8988
+Pivot element A[1][1] = 45.9184
+Pivot b[1] = 49.5102
+Thread 7 processed row 9: factor = 0.0982222, A[9][1] 4.5102 -> 0, b[9] 38.0612 -> 33.1982
+Thread 5 processed row 7: factor = 0.2, A[7][1] 9.18367 -> 0, b[7] 35.102 -> 25.2
+Thread 6 processed row 8: factor = 0.0475556, A[8][1] 2.18367 -> 0, b[8] 51.102 -> 48.7476
+Thread 2 processed row 4: factor = 0.203556, A[4][1] 9.34694 -> 0, b[4] 67.0816 -> 57.0036
+Thread 0 processed row 2: factor = 0.172444, A[2][1] 7.91837 -> 0, b[2] 41.5102 -> 32.9724
+Thread 1 processed row 3: factor = 0.0693333, A[3][1] 3.18367 -> -4.44089e-16, b[3] 83.102 -> 79.6693
+Thread 4 processed row 6: factor = 0.0728889, A[6][1] 3.34694 -> 4.44089e-16, b[6] 46.0816 -> 42.4729
+Thread 3 processed row 5: factor = 0.0911111, A[5][1] 4.18367 -> 0, b[5] 0.102041 -> -4.40889
 ----------------------------------------
 Step k = 2
-Pivot element A[2][2] = 8392.99
-Pivot b[2] = 57.8792
-Thread 0 processed row 3: factor = 0.00119048, A[3][2] 9.99165 -> 0, b[3] 19.9119 -> 19.843
-Thread 0 processed row 4: factor = 0.00011827, A[4][2] 0.992641 -> 0, b[4] 74.9054 -> 74.8985
-Thread 0 processed row 5: factor = 0.000832624, A[5][2] 6.98821 -> 0, b[5] 8.88248 -> 8.83428
-Thread 0 processed row 6: factor = 0.000356476, A[6][2] 2.9919 -> 0, b[6] 77.9037 -> 77.8831
-Thread 0 processed row 7: factor = 0.000475711, A[7][2] 3.99263 -> 0, b[7] 72.9184 -> 72.8909
-Thread 0 processed row 8: factor = 0.00119094, A[8][2] 9.99558 -> 0, b[8] 82.951 -> 82.8821
-Thread 0 processed row 9: factor = 0.000118211, A[9][2] 0.992145 -> 0, b[9] 15.9086 -> 15.9018
-Thread 0 processed row 10: factor = 0.000237064, A[10][2] 1.98968 -> 0, b[10] 70.8988 -> 70.8851
-Thread 0 processed row 11: factor = 0.000237212, A[11][2] 1.99092 -> 0, b[11] 79.8972 -> 79.8835
+Pivot element A[2][2] = 68.2596
+Pivot b[2] = 32.9724
+Thread 6 processed row 9: factor = 0.0329006, A[9][2] 2.24578 -> 0, b[9] 33.1982 -> 32.1134
+Thread 3 processed row 6: factor = 0.0325685, A[6][2] 2.22311 -> 0, b[6] 42.4729 -> 41.399
+Thread 1 processed row 4: factor = -0.00427128, A[4][2] -0.291556 -> 0, b[4] 57.0036 -> 57.1444
+Thread 5 processed row 8: factor = 0.0175865, A[8][2] 1.20044 -> 0, b[8] 48.7476 -> 48.1677
+Thread 2 processed row 5: factor = 0.0443731, A[5][2] 3.02889 -> 0, b[5] -4.40889 -> -5.87198
+Thread 0 processed row 3: factor = 0.0895796, A[3][2] 6.11467 -> 0, b[3] 79.6693 -> 76.7157
+Thread 4 processed row 7: factor = 0.0966898, A[7][2] 6.6 -> 0, b[7] 25.2 -> 22.0119
 ----------------------------------------
 Step k = 3
-Pivot element A[3][3] = 8261.98
-Pivot b[3] = 19.843
-Thread 0 processed row 4: factor = 0.000845196, A[4][3] 6.98299 -> 0, b[4] 74.8985 -> 74.8818
-Thread 0 processed row 5: factor = 0.000724269, A[5][3] 5.9839 -> 0, b[5] 8.83428 -> 8.81991
-Thread 0 processed row 6: factor = 0.000603199, A[6][3] 4.98362 -> 0, b[6] 77.8831 -> 77.8711
-Thread 0 processed row 7: factor = 0.00120878, A[7][3] 9.98694 -> 0, b[7] 72.8909 -> 72.8669
-Thread 0 processed row 8: factor = 0.00108805, A[8][3] 8.98946 -> 0, b[8] 82.8821 -> 82.8605
-Thread 0 processed row 9: factor = 0.000240324, A[9][3] 1.98556 -> 0, b[9] 15.9018 -> 15.897
-Thread 0 processed row 10: factor = 0.00108787, A[10][3] 8.988 -> 0, b[10] 70.8851 -> 70.8635
-Thread 0 processed row 11: factor = 0.000240148, A[11][3] 1.9841 -> 0, b[11] 79.8835 -> 79.8787
-Thread 0 processed row 12: factor = 0.000845463, A[12][3] 6.9852 -> 0, b[12] 29.8949 -> 29.8781
+Pivot element A[3][3] = 71.0082
+Pivot b[3] = 76.7157
+Thread 4 processed row 8: factor = 0.0228512, A[8][3] 1.62262 -> 0, b[8] 48.1677 -> 46.4146
+Thread 3 processed row 7: factor = 0.0889759, A[7][3] 6.31801 -> 0, b[7] 22.0119 -> 15.1861
+Thread 1 processed row 5: factor = 0.101683, A[5][3] 7.22035 -> 0, b[5] -5.87198 -> -13.6727
+Thread 0 processed row 4: factor = 0.101633, A[4][3] 7.21679 -> 0, b[4] 57.1444 -> 49.3475
+Thread 5 processed row 9: factor = 0.00950043, A[9][3] 0.674608 -> 0, b[9] 32.1134 -> 31.3846
+Thread 2 processed row 6: factor = 0.0788212, A[6][3] 5.59695 -> 0, b[6] 41.399 -> 35.3522
 ----------------------------------------
 Step k = 4
-Pivot element A[4][4] = 8265.98
-Pivot b[4] = 74.8818
-Thread 0 processed row 5: factor = 0.000360092, A[5][4] 2.97651 -> 0, b[5] 8.81991 -> 8.79295
-Thread 0 processed row 6: factor = 0.00120738, A[6][4] 9.9802 -> 0, b[6] 77.8711 -> 77.7807
-Thread 0 processed row 7: factor = 0.0007232, A[7][4] 5.97796 -> 0, b[7] 72.8669 -> 72.8127
-Thread 0 processed row 8: factor = 0.000844063, A[8][4] 6.97701 -> 0, b[8] 82.8605 -> 82.7973
-Thread 0 processed row 9: factor = 0.000845104, A[9][4] 6.98561 -> 0, b[9] 15.897 -> 15.8337
-Thread 0 processed row 10: factor = 0.000844509, A[10][4] 6.98069 -> 0, b[10] 70.8635 -> 70.8002
-Thread 0 processed row 11: factor = 0.000844871, A[11][4] 6.98368 -> 0, b[11] 79.8787 -> 79.8154
-Thread 0 processed row 12: factor = 0.000844478, A[12][4] 6.98044 -> 0, b[12] 29.8781 -> 29.8149
-Thread 0 processed row 13: factor = 0.000966302, A[13][4] 7.98743 -> 0, b[13] 75.8912 -> 75.8189
+Pivot element A[4][4] = 60.1156
+Pivot b[4] = 49.3475
+Thread 3 processed row 8: factor = -0.00386827, A[8][4] -0.232544 -> 0, b[8] 46.4146 -> 46.6055
+Thread 2 processed row 7: factor = -0.0352374, A[7][4] -2.11832 -> 0, b[7] 15.1861 -> 16.9249
+Thread 1 processed row 6: factor = 0.05864, A[6][4] 3.52518 -> 0, b[6] 35.3522 -> 32.4585
+Thread 4 processed row 9: factor = 0.116371, A[9][4] 6.99571 -> 0, b[9] 31.3846 -> 25.642
+Thread 0 processed row 5: factor = 0.0813109, A[5][4] 4.88805 -> 0, b[5] -13.6727 -> -17.6852
 ----------------------------------------
 Step k = 5
-Pivot element A[5][5] = 8186.97
-Pivot b[5] = 8.79295
-Thread 0 processed row 6: factor = 0.000362974, A[6][5] 2.97166 -> 0, b[6] 77.7807 -> 77.7775
-Thread 0 processed row 7: factor = 0.000485375, A[7][5] 3.97375 -> 0, b[7] 72.8127 -> 72.8085
-Thread 0 processed row 8: factor = 0.000363024, A[8][5] 2.97207 -> 0, b[8] 82.7973 -> 82.7941
-Thread 0 processed row 9: factor = 0.000730365, A[9][5] 5.97948 -> 0, b[9] 15.8337 -> 15.8273
-Thread 0 processed row 10: factor = 0.000729688, A[10][5] 5.97394 -> 0, b[10] 70.8002 -> 70.7938
-Thread 0 processed row 11: factor = 0.000485838, A[11][5] 3.97755 -> 0, b[11] 79.8154 -> 79.8112
-Thread 0 processed row 12: factor = 0.000119096, A[12][5] 0.975033 -> 0, b[12] 29.8149 -> 29.8138
-Thread 0 processed row 13: factor = 0.000486029, A[13][5] 3.97911 -> 0, b[13] 75.8189 -> 75.8146
-Thread 0 processed row 14: factor = 0.00121888, A[14][5] 9.97898 -> 0, b[14] 43.8352 -> 43.8245
+Pivot element A[5][5] = 68.1285
+Pivot b[5] = -17.6852
+Thread 3 processed row 9: factor = 0.0473905, A[9][5] 3.22864 -> 0, b[9] 25.642 -> 26.4801
+Thread 1 processed row 7: factor = 0.00702138, A[7][5] 0.478356 -> 0, b[7] 16.9249 -> 17.0491
+Thread 2 processed row 8: factor = 0.104319, A[8][5] 7.10712 -> 0, b[8] 46.6055 -> 48.4504
+Thread 0 processed row 6: factor = -0.00361813, A[6][5] -0.246497 -> 0, b[6] 32.4585 -> 32.3945
 ----------------------------------------
 Step k = 6
-Pivot element A[6][6] = 8222.97
-Pivot b[6] = 77.7775
-Thread 0 processed row 7: factor = 0.000117893, A[7][6] 0.969434 -> 0, b[7] 72.8085 -> 72.7993
-Thread 0 processed row 8: factor = 0.000118596, A[8][6] 0.975208 -> 0, b[8] 82.7941 -> 82.7849
-Thread 0 processed row 9: factor = 0.00109136, A[9][6] 8.97421 -> 0, b[9] 15.8273 -> 15.7424
-Thread 0 processed row 10: factor = 0.000725869, A[10][6] 5.9688 -> 0, b[10] 70.7938 -> 70.7374
-Thread 0 processed row 11: factor = 0.000240247, A[11][6] 1.97555 -> 0, b[11] 79.8112 -> 79.7925
-Thread 0 processed row 12: factor = 0.000604908, A[12][6] 4.97415 -> 0, b[12] 29.8138 -> 29.7668
-Thread 0 processed row 13: factor = 0.000240691, A[13][6] 1.97919 -> 0, b[13] 75.8146 -> 75.7959
-Thread 0 processed row 14: factor = 0.000726114, A[14][6] 5.97082 -> 0, b[14] 43.8245 -> 43.768
-Thread 0 processed row 15: factor = 0.000484021, A[15][6] 3.98009 -> 0, b[15] 15.81 -> 15.7724
+Pivot element A[6][6] = 48.895
+Pivot b[6] = 32.3945
+Thread 1 processed row 8: factor = -0.00860481, A[8][6] -0.420733 -> 0, b[8] 48.4504 -> 48.7292
+Thread 0 processed row 7: factor = 0.0980317, A[7][6] 4.79326 -> 0, b[7] 17.0491 -> 13.8734
+Thread 2 processed row 9: factor = 0.1142, A[9][6] 5.58383 -> 0, b[9] 26.4801 -> 22.7806
 ----------------------------------------
 Step k = 7
-Pivot element A[7][7] = 8454.98
-Pivot b[7] = 72.7993
-Thread 0 processed row 8: factor = 0.000943747, A[8][7] 7.97937 -> 0, b[8] 82.7849 -> 82.7162
-Thread 0 processed row 9: factor = 0.00118024, A[9][7] 9.9789 -> 0, b[9] 15.7424 -> 15.6565
-Thread 0 processed row 10: factor = 0.000825585, A[10][7] 6.9803 -> 0, b[10] 70.7374 -> 70.6773
-Thread 0 processed row 11: factor = 0.000826081, A[11][7] 6.9845 -> 0, b[11] 79.7925 -> 79.7323
-Thread 0 processed row 12: factor = 0.00011607, A[12][7] 0.981367 -> 0, b[12] 29.7668 -> 29.7583
-Thread 0 processed row 13: factor = 0.000353402, A[13][7] 2.98801 -> 0, b[13] 75.7959 -> 75.7702
-Thread 0 processed row 14: factor = 0.000824926, A[14][7] 6.97473 -> 0, b[14] 43.768 -> 43.708
-Thread 0 processed row 15: factor = 0.000589549, A[15][7] 4.98463 -> 0, b[15] 15.7724 -> 15.7295
-Thread 0 processed row 16: factor = 0.000825482, A[16][7] 6.97944 -> 0, b[16] 5.73329 -> 5.67319
+Pivot element A[7][7] = 65.5476
+Pivot b[7] = 13.8734
+Thread 0 processed row 8: factor = 0.128981, A[8][7] 8.45436 -> 0, b[8] 48.7292 -> 46.9398
+Thread 1 processed row 9: factor = 0.062899, A[9][7] 4.12288 -> 0, b[9] 22.7806 -> 21.908
 ----------------------------------------
 Step k = 8
-Pivot element A[8][8] = 8226.97
-Pivot b[8] = 82.7162
-Thread 0 processed row 9: factor = 0.000239232, A[9][8] 1.96815 -> 0, b[9] 15.6565 -> 15.6367
-Thread 0 processed row 10: factor = 0.000117417, A[10][8] 0.965987 -> 0, b[10] 70.6773 -> 70.6676
-Thread 0 processed row 11: factor = 0.000847426, A[11][8] 6.97175 -> 0, b[11] 79.7323 -> 79.6622
-Thread 0 processed row 12: factor = 0.00121183, A[12][8] 9.9697 -> 0, b[12] 29.7583 -> 29.6581
-Thread 0 processed row 13: factor = 0.000483093, A[13][8] 3.9744 -> 0, b[13] 75.7702 -> 75.7302
-Thread 0 processed row 14: factor = 0.000847139, A[14][8] 6.96939 -> 0, b[14] 43.708 -> 43.6379
-Thread 0 processed row 15: factor = 0.000847431, A[15][8] 6.97179 -> 0, b[15] 15.7295 -> 15.6594
-Thread 0 processed row 16: factor = 0.000483553, A[16][8] 3.97817 -> 0, b[16] 5.67319 -> 5.63319
-Thread 0 processed row 17: factor = 0.00084673, A[17][8] 6.96603 -> 0, b[17] 63.747 -> 63.677
+Pivot element A[8][8] = 53.4425
+Pivot b[8] = 46.9398
+Thread 0 processed row 9: factor = 0.120415, A[9][8] 6.43527 -> 0, b[9] 21.908 -> 16.2557
 ----------------------------------------
 Step k = 9
-Pivot element A[9][9] = 8379.97
-Pivot b[9] = 15.6367
-Thread 0 processed row 10: factor = 0.0010696, A[10][9] 8.96317 -> 0, b[10] 70.6676 -> 70.6508
-Thread 0 processed row 11: factor = 0.000115891, A[11][9] 0.971161 -> 0, b[11] 79.6622 -> 79.6604
-Thread 0 processed row 12: factor = 0.0010704, A[12][9] 8.96993 -> 0, b[12] 29.6581 -> 29.6414
-Thread 0 processed row 13: factor = 0.000952152, A[13][9] 7.979 -> 0, b[13] 75.7302 -> 75.7153
-Thread 0 processed row 14: factor = 0.000115432, A[14][9] 0.967315 -> 0, b[14] 43.6379 -> 43.6361
-Thread 0 processed row 15: factor = 0.000474201, A[15][9] 3.97379 -> 0, b[15] 15.6594 -> 15.652
-Thread 0 processed row 16: factor = 0.00095035, A[16][9] 7.9639 -> 0, b[16] 5.63319 -> 5.61833
-Thread 0 processed row 17: factor = 0.000235576, A[17][9] 1.97412 -> 0, b[17] 63.677 -> 63.6733
-Thread 0 processed row 18: factor = 0.000593217, A[18][9] 4.97114 -> 0, b[18] 4.75408 -> 4.7448
+Pivot element A[9][9] = 60.1995
+Pivot b[9] = 16.2557
+
+Result vector x:
+x[0] = 1.03187
+x[1] = 0.707033
+x[2] = 0.244311
+x[3] = 0.907163
+x[4] = 0.702635
+x[5] = -0.325337
+x[6] = 0.552123
+x[7] = 0.198716
+x[8] = 0.862386
+x[9] = 0.270031
